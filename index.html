@@ -16,7 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,700italic' rel='stylesheet' type='text/css'>
 
     <!-- Theme Style -->
-    <link rel="stylesheet" href="css/styles-mint.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Available main styles: styles-coral.css, styles-mint.css -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,18 +37,8 @@
 </head>
 <body>
 
-<!-- Preloader start -->
-<div id="page-preloader" class="animated text-center">
-    <img src="img/preloader-logo.png" alt="Foot and Sport Massage" clmobilelfoot and sport massage service"/>
-    <h1 class="title-preloader">Foot and Sport Massage</h1mobile foot and sport massage servicespinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-    </div>
-</div>
-<!-- Preloader end -->
-
 <!-- Navigation Top start -->
-<nav class="navbar navbar-default navbar-fixed-top navbar-hidden navigation-top" id="navigation-top-1"
+<nav class="navbar navbar-default navbar-fixed-top navigation-top" id="navigation-top-1"
      role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -63,7 +53,7 @@
             <!-- Logo start -->
             <a class="navbar-brand scroll-to" href="#home">
                 <span class="va-helper"></span>
-                <img src="img/nav-logo.png" alt="BasicGrid Wellness and Spa"/>
+                <img src="img/footandsportmassage-nav-logo.png" alt="Foot and Sport Massage"/>
             </a>
             <!-- Logo end -->
         </div>
@@ -71,11 +61,7 @@
         <!-- Nav-Links start -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#home" class="scroll-to">Home</a></li>
                 <li><a href="#our-service" class="scroll-to">Our Services</a></li>
-                <li><a href="#about-us" class="scroll-to">About Us</a></li>
-                <li><a href="#offers" class="scroll-to">Offers</a></li>
-                <li><a href="#team" class="scroll-to">Team</a></li>
                 <li><a href="#contact" class="scroll-to">Contact</a></li>
                 <li><a href="#" class="btn btn-default navbar-btn btn-success show-appointment-modal"><i class="fa fa-calendar fa-fw"></i> Request an Appointment</a></li>
             </ul>
@@ -90,23 +76,86 @@
 <section class="header-full-screen-img fullscreen no-border-top" id="home">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <img class="logo" src="img/header-logo.png" alt="BasicGrid Wellness and Spa"/>
-
-                <div class="cd-intro">
-                <h1 class="cd-headline slide">Give yourself a moment of
-
-                    <!--Word Slider start-->
-                    <span class="cd-words-wrapper">
-                        <b class="is-visible">relaxation</b>
-                        <b>wellness</b>
-                        <b>happiness</b>
-                    </span>
-                    <!--Word Slider end-->
-                </h1>
+            <div class="col-xs-12 col-md-5 col-md-offset-7 book-an-appointment">
+                <div class="service-and-date">
+                    <div class="alert hidden" id="book-an-appointment-form-msg"></div>
+                    <h1>Book a Foot and Sport Massage</h1>
+                    <div class="service-select">
+                        <div class="input-group">
+                            <select name="appointment-service" id="appointment-service" class="form-control">
+                                <option value="">Please select your Service</option>
+                                <option value="Oil Massage">Oil Massage ($59.00)</option>
+                                <option value="Relax Day">Relax Day ($199.00)</option>
+                                <option value="Spa & Beauty">Spa & Beauty ($299.00)</option>
+                                <option value="Relax Day (for Two)">Relax Day (for Two $399.00)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="date-select">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="appointment-date"><i class="fa fa-calendar"></i></span>
+                            <input type="text" class="form-control datepicker" name="appointment-date" placeholder="Date: mm/dd/yyyy"
+                                aria-describedby="appointment-date">
+                        </div>
+                    </div>
+                    <div class="time-select">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="appointment-time"><i class="fa fa-clock-o"></i></span>
+                            <select name="appointment-time" class="form-control" aria-describedby="appointment-time">
+                                <option value="">Please select your Time</option>
+                                <option value="12:00 AM">12:00 AM</option>
+                                <option value="12:30 AM">12:30 AM</option>
+                                <option value="01:00 AM">01:00 AM</option>
+                                <option value="01:30 AM">01:30 AM</option>
+                                <option value="02:00 AM">02:00 AM</option>
+                                <option value="02:30 AM">02:30 AM</option>
+                                <option value="03:00 AM">03:00 AM</option>
+                                <option value="03:30 AM">03:30 AM</option>
+                                <option value="04:00 AM">04:00 AM</option>
+                                <option value="04:30 AM">04:30 AM</option>
+                                <option value="05:00 AM">05:00 AM</option>
+                                <option value="05:30 AM">05:30 AM</option>
+                                <option value="06:00 AM">06:00 AM</option>
+                                <option value="06:30 AM">06:30 AM</option>
+                                <option value="07:00 AM">07:00 AM</option>
+                                <option value="07:30 AM">07:30 AM</option>
+                                <option value="08:00 AM">08:00 AM</option>
+                                <option value="08:30 AM">08:30 AM</option>
+                                <option value="09:00 AM">09:00 AM</option>
+                                <option value="09:30 AM">09:30 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="10:30 AM">10:30 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="11:30 AM">11:30 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="12:30 PM">12:30 PM</option>
+                                <option value="01:00 PM">01:00 PM</option>
+                                <option value="01:30 PM">01:30 PM</option>
+                                <option value="02:00 PM">02:00 PM</option>
+                                <option value="02:30 PM">02:30 PM</option>
+                                <option value="03:00 PM">03:00 PM</option>
+                                <option value="03:30 PM">03:30 PM</option>
+                                <option value="04:00 PM">04:00 PM</option>
+                                <option value="04:30 PM">04:30 PM</option>
+                                <option value="05:00 PM">05:00 PM</option>
+                                <option value="05:30 PM">05:30 PM</option>
+                                <option value="06:00 PM">06:00 PM</option>
+                                <option value="06:30 PM">06:30 PM</option>
+                                <option value="07:00 PM">07:00 PM</option>
+                                <option value="07:30 PM">07:30 PM</option>
+                                <option value="08:00 PM">08:00 PM</option>
+                                <option value="08:30 PM">08:30 PM</option>
+                                <option value="09:00 PM">09:00 PM</option>
+                                <option value="09:30 PM">09:30 PM</option>
+                                <option value="10:00 PM">10:00 PM</option>
+                                <option value="10:30 PM">10:30 PM</option>
+                                <option value="11:00 PM">11:00 PM</option>
+                                <option value="11:30 PM">11:30 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-
-                <p>Welcome to Foot and Sport Massage! A mobile foot and sport massage service dedicated to inspiring Life in Balance.</p>
             </div>
         </div>
         <a class="scroll-down scroll-to" href="#our-service"><i class="fa fa-angle-down"></i></a>
